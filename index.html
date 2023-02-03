@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Gym</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+<style>
+    /* css reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('Image/barbell-1839086_1920.jpg');
+
+
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        color: aliceblue;
+        /* border: 2px solid white; */
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        color: aliceblue;
+       
+        margin: 40px auto;
+    }
+
+    .right {
+        display: inline-block;
+        position: fixed;
+        right: 20px;
+        top: 30px;
+        color: aliceblue;
+
+    }
+
+    .nav li {
+        display: inline;
+    }
+
+    .nav li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px 7px;
+        padding: 0px 7px;
+    }
+
+    .nav li a:hover,
+    .nav li a:active {
+        text-decoration: underline;
+        color: red;
+        cursor: pointer;
+    }
+
+    .left img {
+        padding: 0px;
+        margin: 0px;
+        width: 200px;
+        filter: invert(50%);
+    }
+
+    .left div {
+        padding: 0px;
+        margin: 0px;
+        color: rgb(247, 243, 243);
+        font-size: 30px;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-weight: bolder;
+        text-align: center;
+        position: relative;
+        bottom: 70px;
+        filter: invert(10%);
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        font-size: 20px;
+        padding: 0px 5px;
+        margin: 0px 5px;
+        border: 2px solid white;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(209, 181, 181);
+    }
+
+
+    .container {
+        
+        display: inline-block;
+        width: 530px;
+        margin: 79px;
+
+
+    }
+
+    .container h1 {
+        font-family: 'Baloo Bhai 2', cursive;
+        display: block;
+
+        text-align: center;
+    }
+
+    .fuck {
+        display: block;
+
+        text-align: center;
+    }
+
+    .form {
+        color: grey;
+        margin: 10px;
+        width: 250px;
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 15px;
+
+    }
+
+    .submit {
+        margin: 10px 2px;
+    }
+
+    #submit {
+        width: 250px;
+        padding top: 9px;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="image/the-muscles-369784_1280.png" alt="">
+            <div>Gym</div>
+        </div>
+
+        <div class="mid">
+            <nav class="nav">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Information</a></li>
+                    <li> <a href="#">Fitness calculator</a></li>
+                    <li> <a href="#">log out</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="right">
+            <button class="btn">Contact us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 style="color: white ;">Join Now</h1>
+        <div class="fuck">
+            <form action="noaction.php">
+                <input type="text" class="form" placeholder="Enter your Name"><br>
+                <input type="email" class="form" placeholder="Enter your email"><br>
+                <input type="number" class="form" placeholder="Enter your number"><br>
+                <input type="text" class="form" placeholder="Enter your locality"><br>
+                <input type="date" class="form" placeholder="Enter your DOB"><br>
+
+                <div class="submit">
+                    <input type="submit" class="btn" id="submit" placeholder="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
